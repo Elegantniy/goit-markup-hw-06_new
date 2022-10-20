@@ -538,12 +538,25 @@
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form>
-          <input type="name" class="modal-input" name="user-name" />
-          <input type="tel" class="modal-input" name="user-tel" />
-          <input type="email" class="modal-input" name="user-email" />
+          <div class="modal-field">
+            <label for="user-name">Ім'я</label>
+            <input type="name" class="modal-input" name="user-name" id="user-name" />
+          </div>
+          <div class="modal-field">
+            <label for="user-tel">Телефон</label>
+            <input type="tel" class="modal-input" name="user-tel" id="user-tel" />
+          </div>
+          <div class="modal-field">
+            <label for="user-email">Пошта</label>
+            <input type="email" class="modal-input" name="user-email" id="user-email" />
+          </div>
+          <div class="modal-field div-feedback">
+            <label for="feedback">Коментар</label>
+            <textarea name="feedback" id="feedback" placeholder="Введіть текст" class="feedback-text"></textarea>
+          </div>
           <input type="checkbox" name="policy" id="policy" />
           <label for="policy">
-            Погоджуюся з розсилкою та приймаю Умови договору</label
+            Погоджуюся з розсилкою та приймаю <a href="#" class="policy-link">Умови договору</a> </label
           >
           <button type="submit">Відправити</button>
         </form>
