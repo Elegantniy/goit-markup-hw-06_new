@@ -507,8 +507,28 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <h2 class="subscribe-title">Підпишіться на розсилку</h2>
+          <form>
+            <input
+              type="email"
+              name="subscribe-email"
+              placeholder="E-mail"
+              class="subscribe-form"
+            />
+            <button type="submit" class="subscribe-button">
+              Підписатися
+              <svg class="subscribe-icon" width="24" height="24">
+                <use
+                  href="./images/footer/symbol-defs.svg#icon-subscribe"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="modal-close">
@@ -516,10 +536,17 @@
             <use href="./images/hero/symbol-defs.svg#icon-close-tag"></use>
           </svg>
         </button>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Necessitatibus, eos?
-        </p>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form>
+          <input type="name" class="modal-input" name="user-name" />
+          <input type="tel" class="modal-input" name="user-tel" />
+          <input type="email" class="modal-input" name="user-email" />
+          <input type="checkbox" name="policy" id="policy" />
+          <label for="policy">
+            Погоджуюся з розсилкою та приймаю Умови договору</label
+          >
+          <button type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

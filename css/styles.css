@@ -29,6 +29,8 @@ font-family: 'Roboto', sans-serif; */
   --project-overlay: rgba(33, 150, 243, 0.9);
   --modal-background: rgba(0, 0, 0, 0.2);
   --features-info-bckg: rgba(47, 48, 58, 0.8);
+  --modal-border: rgba(33, 33, 33, 0.2);
+  --subscribe-border-color: rgba(255, 255, 255, 0.3);
 }
 /* index.html */
 body {
@@ -516,7 +518,7 @@ body {
   color: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
-.join-title {
+.join-title, .subscribe-title  {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -545,8 +547,58 @@ body {
 .join-link:focus {
   background-color: var(--primary-action-color);
 }
-.join-soc-icon {
+.join-soc-icon, .subscribe-icon {
   fill: var(--white-color);
+}
+
+/* Subscribe */
+.subscribe {
+  margin-left: 93px;
+}
+.subscribe-form {
+  background-color: inherit;
+  border: 1px solid var(--subscribe-border-color);
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  color: var(--subscribe-border-color);
+  padding-left: 16px;
+}
+.subscribe form {
+  display: flex;
+  flex-direction: row;
+}
+
+.subscribe-button {
+  display: flex;
+  background-color: var(--primary-action-color);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border-style: none;
+  color: var(--white-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  padding: 10px 28px;
+  margin-left: 12px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.subscribe-icon {
+  margin-left: 10px;
 }
 
 /* portfolio.html */
@@ -693,10 +745,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 528px;
-  min-width: 581px;
+  height: 528px;
+  width: 581px;
   background-color: var(--white-color);
-  padding: 10px;
+  padding: 40px;
 }
 
 .modal-close {
@@ -718,4 +770,24 @@ body {
   height: 11px;
   width: 11px;
   fill: var(--black-color);
+}
+
+.modal-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--modal-border);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding-left: 12px;
 }
