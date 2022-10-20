@@ -168,6 +168,8 @@ body {
 .icon-header {
   margin-right: 10px;
   fill: var(--header-icon);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link-item:hover .icon-header,
 .contact-link-item:focus .icon-header {
@@ -518,7 +520,8 @@ body {
   color: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
-.join-title, .subscribe-title  {
+.join-title,
+.subscribe-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -547,7 +550,8 @@ body {
 .join-link:focus {
   background-color: var(--primary-action-color);
 }
-.join-soc-icon, .subscribe-icon {
+.join-soc-icon,
+.subscribe-icon {
   fill: var(--white-color);
 }
 
@@ -588,17 +592,26 @@ body {
   font-weight: 700;
   padding: 10px 28px;
   margin-left: 12px;
-  transition-property: box-shadow;
+  transition-property: color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
-.subscribe-button:hover {
+.subscribe-button:hover,
+.subscribe-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--black-color);
+}
+
+.subscribe-button:hover .subscribe-icon,
+.subscribe-button:focus .subscribe-icon {
+  fill: var(--black-color);
 }
 .subscribe-icon {
   margin-left: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* portfolio.html */
