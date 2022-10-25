@@ -779,11 +779,20 @@ body {
   cursor: pointer;
 }
 
+.modal-close:hover .modal-close-img,
+.modal-close:focus .modal-close-img {
+  fill: var(--primary-action-color);
+}
+
 .modal-close-img {
   height: 11px;
   width: 11px;
   fill: var(--black-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .modal-title {
   font-style: normal;
