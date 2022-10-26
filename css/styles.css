@@ -462,6 +462,7 @@ body {
 .footer .container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-logo-link {
@@ -514,9 +515,7 @@ body {
   display: flex;
 }
 /* join */
-.join {
-  margin-left: 70px;
-}
+
 .join-list a {
   text-decoration: none;
   color: var(--white-color);
@@ -558,16 +557,14 @@ body {
 }
 
 /* Subscribe */
-.subscribe {
-  margin-left: 93px;
-}
+
 .subscribe-form {
   background-color: inherit;
   border: 1px solid var(--subscribe-border-color);
   width: 358px;
   height: 50px;
   border-radius: 4px;
-  color: var(--subscribe-border-color);
+  color: var(--white-color);
   padding-left: 16px;
 }
 .subscribe form {
@@ -770,6 +767,7 @@ body {
   position: absolute;
   right: 8px;
   top: 8px;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 30px;
@@ -812,7 +810,7 @@ body {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  color: #212121;
+  color: var(--primary-title-color);
   margin-top: 0;
   margin-bottom: 12px;
 }
@@ -836,10 +834,10 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:hover, .modal-input:focus{
+.modal-input:focus{
   border-color: var(--primary-action-color);
 }
-.modal-input:hover + .modal-input-icon, 
+
 .modal-input:focus + .modal-input-icon{
   fill: var(--primary-action-color);
 }
@@ -860,9 +858,10 @@ body {
   margin-left: 3px;
 }
 .div-feedback {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .feedback-text {
+  display: block;
   width: 100%;
   height: 120px;
   resize: none;
@@ -915,8 +914,7 @@ body {
   fill: var(--white-color);
 }
 
-.input-check:focus + .check-text span,
-.input-check:hover + .check-text span {
+.input-check:focus + .check-text span {
   border-color: var(--primary-action-color);
 }
 
